@@ -37,12 +37,14 @@
 
 /obj/item/storage/secure/briefcase/bsbaton/stunbaton
 	name = "\improper Stun Baton box"
-	desc = "A storage case for a high-tech Stun baton. Pick up that can."
+	desc = "A storage case for an advanced Stun baton. I said stay down!"
 
 /obj/item/storage/secure/briefcase/bsbaton/stunbaton/PopulateContents()
-	new  /obj/item/melee/baton(src)
-	new /obj/item/storage/belt/security/full(src)
+	new  /obj/item/melee/baton/blueton(src)
+	new /obj/item/storage/belt/security(src)
+	new /obj/item/stock_parts/cell/high/plus(src)
 
+/*
 /obj/item/storage/secure/briefcase/bsbaton/stunsword
 	name = "\improper Stun Sword box"
 	desc = "A storage case for a high-tech Stun sword. The ninjas will fear you."
@@ -50,6 +52,8 @@
 /obj/item/storage/secure/briefcase/bsbaton/stunsword/PopulateContents()
 	new /obj/item/storage/belt/sabre/secbelt(src)
 	new /obj/item/stock_parts/cell/high/plus(src)
+*/
+// No longer needed as the central stunbaton is a higher tier than it, just get a regular one
 
 /obj/item/storage/secure/briefcase/bsbaton/tele
 	name = "\improper APS Baton Box"

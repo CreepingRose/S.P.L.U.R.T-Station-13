@@ -98,11 +98,14 @@
 	deductcharge(round(hitcost * STUNBATON_DEPLETION_RATE), FALSE, FALSE)
 
 /obj/item/melee/baton/update_icon_state()
-	if(turned_on)
+	if(turned_on) //states changed, if needed to be reverted later here they are
+		//icon_state = "stunbaton_resprite_active"
 		icon_state = "[initial(name)]_active"
 	else if(!cell)
+		//icon_state = "stunbaton_resprite_nocell"
 		icon_state = "[initial(name)]_nocell"
 	else
+		//icon_state = "stunbaton_resprite"
 		icon_state = "[initial(name)]"
 
 /obj/item/melee/baton/examine(mob/user)

@@ -1,4 +1,4 @@
-/obj/item/genital_equipment/sounding //TODO probably fix this shit as well
+/obj/item/genital_equipment/sounding //TODO probably fix this shit as well // probably should
 	name 				= "sounding rod"
 	desc 				= "Dont be silly, stuff your willy!"
 	icon 				= 'modular_splurt/icons/obj/sounding.dmi'
